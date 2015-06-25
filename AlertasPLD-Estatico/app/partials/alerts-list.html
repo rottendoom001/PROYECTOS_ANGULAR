@@ -1,0 +1,39 @@
+<!-- "idAlerta":"1",
+"fechaGen":"2015-06-11T17:59:32.203Z",
+"idCliente":"1",
+"cuenta":"12345678",
+"motivo":"MONTO NO PERMITIDO",
+"montoAcumulado":"500000",
+"estatus":"NO RESUELTA" -->
+<div class="container">
+
+<div class="TituloVentana"><h3>Alertas</h3></div>
+  <table class="table table-striped">
+      <thead>
+        <tr class="CabeceraTabla">
+          <th>ID</th>
+          <th>Fecha Alertamiento</th>
+          <th>Cliente</th>
+          <th>Cuenta</th>
+          <th>Motivo</th>
+          <th>Monto</th>
+          <th>Estatus</th>
+          <th>No Operaciones</th>
+          <th>Relevantes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="a in alerts | filter:query" class="TextoTabla">
+          <td>{{ a.idAlerta }}</td>
+          <td>{{ a.fechaGen }}</td>
+          <td><a href="#/clients/{{a.idCliente}}">{{ a.idCliente }}</a></td>
+          <td><a href="#/accounts/{{a.idCliente}}">{{ a.cuenta }}</a></td>
+          <td>{{ a.motivo }}</td>
+          <td>{{ a.montoAcumulado | currency }}</td>
+          <td>{{ a.estatus }}</td>
+          <td><a href="#/transactions/{{a.idAlerta}}">{{a.noOperaciones}}</a></td>
+          <td><a href="#/transactionsR/{{a.cuenta}}">{{ a.relevante | checkmark}}</a></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

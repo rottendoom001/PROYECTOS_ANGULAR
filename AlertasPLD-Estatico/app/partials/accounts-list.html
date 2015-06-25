@@ -1,0 +1,43 @@
+<!--
+
+"idCuenta":"1",
+"idCliente":"1",
+"fechaGen":"2015-06-11T17:59:32.203Z",
+"crGestor":"CR-SUC-01",
+"nomSucursal":"ARQUIMIDES",
+"cenSup":"CEN-SUP-01",
+"division":"division 1",
+"estado":"DF"
+ -->
+<div class="container">
+
+<div class="TituloVentana"><h3>Cuentas</h3></div>
+  <table class="table table-striped">
+      <thead>
+        <tr class="CabeceraTabla">
+          <th>ID Cuenta</th>
+          <th>ID Cliente</th>
+          <th>Fecha Apertura</th>
+          <th>CR Gestor</th>
+          <th>Nombre Sucursal</th>
+          <th>Centro Superior</th>
+          <th>Division</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="ac in accounts | filter:query" class="TextoTabla">
+          <td>{{ ac.idCuenta }}</td>
+          <td><a href="#/clients/{{ac.idCliente}}">{{ ac.idCliente }}</a></td>
+          <td>{{ ac.fechaGen }}</td>
+          <td>{{ ac.crGestor }}</td>
+          <td>{{ ac.nomSucursal }}</td>
+          <td>{{ ac.cenSup }}</td>
+          <td>{{ ac.division }}</td>
+          <td>{{ ac.estado }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#/alerts">Regresar a Alertas</a>
+</div>

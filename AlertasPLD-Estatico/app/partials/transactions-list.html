@@ -1,0 +1,40 @@
+<!--
+"idOperacion":"1",
+"fechaGen":"2015-06-11T17:59:32.203Z",
+"cuenta":"12345678",
+"monto":"100000",
+"crOp":"CR-OP-01",
+"tipo":"ABONO",
+"idAlerta":"1"
+-->
+
+<div class="container">
+
+<div class="TituloVentana"><h3>Operaciones</h3></div>
+<table class="table table-striped">
+  <thead>
+    <tr class="CabeceraTabla">
+      <th>Operación</th>
+      <th>ID Alerta</th>
+      <th>Fecha Operación</th>
+      <th>Cuenta</th>
+      <th>Monto</th>
+      <th>CR Operación</th>
+      <th>Tipo de Operación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="t in transactions | filter:query" class="TextoTabla">
+      <td>{{ t.idOperacion }}</td>
+      <td><a href="#/alerts/{{t.idAlerta}}">{{ t.idAlerta }}</a></td>
+      <td>{{ t.fechaGen }}</td>
+      <td><a href="#/accounts/{{t.cuenta}}">{{ t.cuenta }}</a></td>
+      <td>{{ t.monto | currency }}</td>
+      <td>{{ t.crOp }}</td>
+      <td>{{ t.tipo }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="#/alerts">Regresar a las Alertas</a>
+</div>

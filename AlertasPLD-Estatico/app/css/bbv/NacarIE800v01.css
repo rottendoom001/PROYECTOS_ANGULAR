@@ -1,0 +1,257 @@
+/* --- ESTILOS USO GENERAL --- */
+body {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color: #ffffff; margin: 0% 0% 0% 0%; color: #41423a}
+a {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+a:link {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+a:visited {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+.EnlaceSeleccionado {font-family: Courier New, Courier, mono; font-size: 8pt; color: #ffffff; text-decoration: underline}
+td {font-family: Arial, Swiss, sans-serif; font-size: 8pt}
+fieldset {border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left}
+fieldset.Solapa {background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left}
+legend {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #41423a; font-weight: bold}
+table.TablaDatos {border: #c9c9c9 1px solid}
+hr.Global{border-bottom: #7fb032 1px solid; border-top: transparent 1px solid}
+td.Global {border-bottom: #7fb032 1px solid}
+label {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: left}
+.TituloVentana { background:#1556a3 url(images/ataa_es_web_pub/Tituloventana_azul.gif) repeat-x; color: #FFFFFF; text-align: left; font-family: Verdana; font-size: 8pt; font-weight: bold}
+.Etiqueta {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: left}
+.CampoEntrada {font-family: Courier New, Courier, mono;font-size: 8pt; color:#41423a; background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoEntradaError {font-family: Courier New, Courier, mono;font-size: 8pt; color:#990101; background-color: #ffffff; border: #990101 1px solid}
+.CampoEntradaOK {font-family: Courier New, Courier, mono;font-size: 8pt; color:#009900; background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoEntradaImporte {font-family: Courier New, Courier, mono;font-size: 8pt; color:#41423a; background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.CampoEntradaImporteError {font-family: Courier New, Courier, mono;font-size: 8pt; color:#990101; background-color: #ffffff; border: #990101 1px solid; text-align: right}
+.CampoEntradaImporteOK {font-family: Courier New, Courier, mono;font-size: 8pt; color:#009900; background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.CampoSalida {font-family: Courier New, Courier, mono; font-size: 8pt; color:#4a5565; background-color: #f0f0f0; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoSalidaError {font-family: Courier New, Courier, mono; font-size: 8pt; color:#990101; background-color: #f0f0f0; border: #990101 1px solid}
+.CampoSalidaOK {font-family: Courier New, Courier, mono; font-size: 8pt; color:#009900; background-color: #f0f0f0; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoSalidaImporte {font-family: Courier New, Courier, mono; font-size: 8pt; color:#4a5565; background-color: #f0f0f0; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.CampoSalidaImporteError {font-family: Courier New, Courier, mono; font-size: 8pt; color:#990101; background-color: #f0f0f0; border: #990101 1px solid; text-align: right}
+.CampoSalidaImporteOK {font-family: Courier New, Courier, mono; font-size: 8pt; color:#009900; background-color: #f0f0f0; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.CampoObligatorio {font-family: Courier New, Courier, mono; font-size: 8pt; color:#41423a; background-color: #ffffcc; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoObligatorioError {font-family: Courier New, Courier, mono; font-size: 8pt; color:#990101; background-color: #ffffcc;  border: #990101 1px solid}
+.CampoObligatorioOK {font-family: Courier New, Courier, mono; font-size: 8pt; color:#009900; background-color: #ffffcc; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.CampoObligatorioImporte {font-family: Courier New, Courier, mono; font-size: 8pt; color:#41423a; background-color: #ffffcc; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.CampoObligatorioImporteError {font-family: Courier New, Courier, mono; font-size: 8pt; color:#990101; background-color: #ffffcc;  border: #990101 1px solid; text-align: right}
+.CampoObligatorioImporteOK {font-family: Courier New, Courier, mono; font-size: 8pt; color:#009900; background-color: #ffffcc; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; text-align: right}
+.Boton {font-family: Arial; font-weight:800; font-size: 8pt; width: 85px; height: 20px; background-color: #ffffff; color: #02458f; border: 0px;	background-repeat:no-repeat; background-position:left top;	background-image:url(images/ataa_es_web_pub/Boton85.gif);}
+.Boton120 {font-family: Arial; font-weight:800; font-size: 8pt; width: 120px; height: 20px; background-color: #ffffff; color: #02458f; border: 0px;	background-repeat:no-repeat; background-position:left top;	background-image:url(images/ataa_es_web_pub/Boton120.gif);}
+.Boton180 {font-family: Arial; font-weight:800; font-size: 8pt; width: 180px; height: 20px; background-color: #ffffff; color: #02458f; border: 0px;	background-repeat:no-repeat; background-position:left top;	background-image:url(images/ataa_es_web_pub/Boton180.gif);}
+.BotonPaginarBloques {font-family: Arial; font-size: 8pt; width: 40px; height: 20px; vertical-align:bottom; background-color: #ffffff; color: #02458f; border: 0px;	background-repeat:no-repeat; background-position:left top;	background-image:url(images/ataa_es_web_pub/BotonPaginarBloques.gif);}
+.TextoTabla {font-family: Arial; font-size: 8pt; font-style: normal}
+.TextoTablaJus {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: justify}
+.TextoTablaCen {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: center}
+.TextoTablaDer {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: right}
+.TextoTablaIzq {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: left}
+.TituloTabla {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #41423a; font-weight: bold; text-align:left; vertical-align: middle}
+.CabeceraTabla {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color:#e0ebf3; color: #02458f; font-weight:bold; text-align:center; vertical-align: middle}
+.CabeceraSeccion {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #02458f; font-weight: bold; text-align:left; vertical-align: middle}
+.Pijama1 {font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #f9f9f9}
+.Pijama2 {font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #eeeeee}
+.Pijama3 {font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #678fbc; color: #ffffff}
+.Total {font-family: Courier New, Courier, mono; font-size: 8pt; color: #02458f; text-align: left; background-color:#e0ebf3}
+.TotalImporte {font-family: Courier New, Courier, mono; font-size: 8pt; color: #02458f; text-align: right; background-color:#e0ebf3}
+.CampoPijama1 {font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #f9f9f9; border: #f9f9f9 1px solid; color: #41423a}
+.CampoPijama1Importe {font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #f9f9f9; border: #f9f9f9 1px solid; text-align: right; color: #41423a}
+.CampoPijama2 { font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #eeeeee; border: #eeeeee 1px solid; color: #41423a}
+.CampoPijama2Importe { font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #eeeeee; border: #eeeeee 1px solid; text-align: right; color: #41423a}
+.CampoPijama3 {color: #ffffff; font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #678fbc; border: #678fbc 1px solid; }
+.CampoPijama3Importe {color: #ffffff; font-family: Courier New, Courier, mono; font-size: 8pt; background-color: #678fbc; border: #678fbc 1px solid; text-align: right}
+.TextoTablaN {font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal}
+.TextoTablaJusN {font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: justify}
+.TextoTablaCenN {font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: center}
+.TextoTablaDerN {font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: right}
+.TextoTablaIzqN {font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: left}
+.FondoSolapa {background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #ffffff 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid}
+.EnlaceSolapaN {color: #666666; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; vertical-align: middle; text-align: center}
+.EnlaceSolapaActivaN {color: #1556a3; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; vertical-align: middle; text-align: center; font-weight: bold}
+.EnlaceSolapaDesactivadaN {color: #cccccc; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; vertical-align: middle; text-align: center}
+.CabeceraRelacionada {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color:#86aef2; color: #FFFFFF; font-weight:bold; text-align:left; vertical-align: middle}
+.FondoRelacionada {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color: #E5eefd}
+.CabeceraRelacionada2 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color:#e0ebf3; color: #02458f; font-weight:bold; text-align:left; vertical-align: middle}
+.FondoRelacionada2 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color: #f1f6fd}
+.SeleccionadoRelacionada {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #660033; text-align:left; vertical-align: middle}
+.linkDes {cursor: default}
+.linkAbi {cursor: hand}
+.SinSalto {white-space: nowrap}
+ul{margin-left:20px}
+li.Destacado{list-style-image:url(images/ataa_es_web_pub/flechaDestacado.gif); font-weight:bold}
+.CabeceraEnlaces {padding-left:20px; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background: #e5edf4 url(images/ataa_es_web_pub/Titulocaja_azulclaro.gif) repeat-x; color: #02458f; font-weight:bold; text-align:left; vertical-align: middle}
+a.EnlaceBoton {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+a:link.EnlaceBoton {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+a:visited.EnlaceBoton {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+a:hover.EnlaceBoton {color: #577a23; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none}
+li.AgrupaEnlaces{list-style-image:url(images/ataa_es_web_pub/fold.gif)}
+li.Agrupado {list-style-image:url(none); list-style-type:disc; font-weight:normal}
+.AyudaCampo{background-color:#FFFFFF; border:1px solid #5a6169; padding:5px; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color:#5a6169}
+.AyudaCampoCerrar {background-color:#d4dcde; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color:#5a6169; text-align:right; margin-bottom:5px}
+.BotonAyuda{font-family: Courier; font-size: 8pt; background-color: #02458f; color: #ffffff; border-bottom: #02458f 1px solid; border-top: #02458f 1px solid; border-left: #02458f 1px solid; border-right: #02458f 1px solid; width:19px;font-weight:bold; height:19px}
+.ImportanciaAlta {font-family: Courier New, Courier, mono;font-size: 8pt; font-weight: bold; background-color:#990101; color:#ffffff; text-align: center}
+.BotonAyudaVentana{font-family: Helvetica; font-size: 11pt; background-color: #02458f; color: #ffffff; border-bottom: #ffffff 1px solid; border-top: #ffffff 1px solid; border-left: #ffffff 1px solid; border-right: #ffffff 3px solid; width:21px;font-weight:bold; height:19px}
+.AyudaContenedor{width:800px; left:7px; top:24px; overflow:hidden;position:absolute; visibility:hidden; border: 1px dashed #4b6aa6}
+
+/* --- ESTILOS DE MAQUETACI�N AUTOESCALABLE GENERALES --- */
+/* ------ Globales */
+html.HtmlPagina {height: 96%}
+body.BodyPagina {height: 96%}
+form.FormPagina {width: 100%; position: absolute; height: auto ! important; min-height: 100%; height: 92%}
+div.DivPagina {width: 100%; position: absolute; height: auto ! important; min-height: 100%; height: 92%}
+div.DivBotonera {position: absolute; bottom: 0pt; left: 0pt; width: 100%; height: 44px; margin-bottom: -44px; clear: both}
+table.TablaContenedorBotonera {width:100%; padding-left: 8px; padding-right: 8px; padding-top: 8px}
+.BotonMargenIzq {margin-right:8px;}
+.BotonMargenDer {margin-left:8px;}
+.BotonPrismatico {vertical-align: bottom; margin-left: 4px; margin-bottom: 1px}
+label.EtiquetaAutoescalable {display: inline-block; padding-right: 8px; padding-top: 8px; vertical-align: bottom}
+fieldset.FieldsetAuto {padding-left: 8px; padding-bottom: 8px; margin-right: 8px; width: auto; display: inline}
+table.TablaEspaciadoAuto {width:auto; padding-bottom: 6px; display: inline}
+label.EtiquetaGlobal {display: inline-block; vertical-align: bottom}
+/* ------ Utilizando tablas */
+table.TablaTitulo {width:100%; padding-left: 8px; height: 22px}
+table.TablaContenedor {width:100%; padding-left: 8px; padding-right: 8px; padding-top: 8px}
+table.TablaContenido {width:100%; padding-bottom: 8px}
+table.TablaEspaciado {width:100%; padding-left: 8px; padding-bottom: 8px}
+table.TablaContenedorSolapas {width:100%; padding-left: 8px; padding-right: 8px}
+table.TablaPestanas {width:100%; margin-top: 8px}
+table.TablaSolapas {width:100%; padding-left: 8px; padding-right: 8px; padding-top: 8px}
+table.TablaListado {width:100%}
+/* ------ Utilizando div */
+div.DivTitulo {width:100%; padding-left: 8px; height: 22px}
+div.DivContenedor {width:100%; padding-left: 8px; padding-right: 8px; padding-top: 8px}
+div.DivContenido {width:100%; padding-bottom: 8px}
+div.DivEspaciado {width:100%; padding-left: 8px; padding-bottom: 8px}
+div.DivContenedorSolapas {width:100%; padding-left: 8px; padding-right: 8px}
+div.DivPestanas {width:100%; margin-top: 8px}
+div.DivSolapas {width:100%; padding-left: 8px; padding-right: 8px; padding-top: 8px}
+
+/* --- ESTILOS SOLO COMPONENTES ARQUITECTURA --- */
+/* ------ Componente pesta�a */
+.PanelPestanas .tab-row .tab {cursor: hand; position: relative; float: left; display: inline; z-index: 3; top: -2px;	color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline; vertical-align: middle; text-align: center;	background-color: #E7E7E4;	border-bottom: #000000 0px solid; border-top: #ffffff 1px solid; 	border-left: #ffffff 1px solid; border-right: #000000 1px solid; margin: 1px 4px -3px 0px; padding: 2px 6px 3px 6px}
+.PanelPestanas .tab-row .tab.selected {z-index: 3; padding: 2px 6px 4px 6px;	margin: 1px 4px -3px 0px; top: -2px; font-weight: bold; cursor: Default; text-decoration: none;	background-color: #E7E7E4;	border-bottom: #000000 0px solid; border-top: #ffffff 1px solid; border-left: #ffffff 1px solid; border-right: #000000 1px solid; border-bottom: 0}
+.PanelPestanas .tab-row .tab.disabled{	color: #555555; cursor: Default;	text-decoration: none}
+.PanelPestanas .tab-page {clear: both; z-index: 2; position: relative;	top: 0px; background-color: #E7E7E4; border-bottom: #000000 1px solid; border-top: #ffffff 1px solid; border-left: #ffffff 1px solid; border-right: #000000 1px solid}
+/* ------ Componente tabla editable */
+.BotonPaginacion {font-family: Verdana; font-size: 8pt; width: 105px; background-color: #dccfa6; color: #000000; border-bottom: #4a5565 1px solid; border-top: #4a5565 1px solid; border-left: #4a5565 1px solid; border-right: #4a5565 1px solid}
+.FormElementTransparent{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; background-color: transparent}
+/* ------ Componente tabla din�mica */
+.InputTransparente {font-family: Arial, Helvetica; font-size: 8pt; color: #000000; font-weight: bold; text-align: center; background-color: transparent; border-bottom: transparent 1px; border-left: transparent 1px; border-right: transparent 1px; border-top: transparent 1px}
+table.TablaDatosCab {border-top: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid}
+table.TablaDatosCuer {border-bottom: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid}
+
+/* --- NUEVOS ESTILOS SOLO COMPONENTES ARQUITECTURA --- */
+/*------- Tablas ellipsis */
+.TablaFijaEllipsis { table-layout: fixed; font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; overflow: hidden; text-overflow: ellipsis; border: #c9c9c9 1px solid;}
+.TablaFija { table-layout: fixed; font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; overflow: hidden; border: #c9c9c9 1px solid;}
+
+/* --- ESTILOS SOLO MIGRACI�N APLICACIONES ANTIGUAS A PG --- */
+.rojo{font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: right; color:#990101;}
+.negro{font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: right; color:#41423a;}
+.labelTransparente {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; text-align: left; color: #41423a; background-color: transparent;  border: transparent 1px ;}
+.EnlaceBoton {color: #02458f; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: underline}
+.EtiMediana { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #41423a ; text-align: centre; vertical-align: middle; border-style: none}
+.EtiMedianaNeg { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #02458f; text-align: centre; vertical-align: middle}
+.MensajeLocal {border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid}
+.FondoAbiError {font-family: Courier New, Courier, mono;font-size: 8pt; color:#990101; background-color: #ffffff; border-bottom: #c9c9c9 1px solid; border-top: #c9c9c9 1px solid; border-right: #c9c9c9 1px solid; border-left: #c9c9c9 1px solid}
+.Pijama1FDT {  background-color: #f9f9f9; font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: justify; border: #f9f9f9 1px solid; text-align: right; color:red}
+.Pijama2FDT {  background-color: #eeeeee; font-family: Courier New, Courier, mono; font-size: 8pt; font-style: normal; text-align: justify; border: #eeeeee 1px solid; text-align: right; color:red}
+
+/* --- ESTILOS S�LO PLATAFORMA GRUPO: ESCENARIOS COMERCIALES --- */
+body.BodyPrincipal {background: #6E9CC1; margin: 0px; padding: 0px; font: normal 9pt Arial, Helvetica, sans-serif; height: 96%;}
+a.enlace, a:link.enlace, a:visited.enlace, a:hover.enlace, a.enlace-deshabilitado, a:link.enlace-deshabilitado, a:visited.enlace-deshabilitado, a:hover.enlace-deshabilitado, a.enlace-texto, a:link.enlace-texto, a:visited.enlace-texto, a:hover.enlace-texto {background: transparent; color: #0451A7; font: bold 9pt Arial, Helvetica, sans-serif; text-decoration: none;}
+a:hover.enlace {text-decoration: underline;}
+a.enlace-deshabilitado, a:link.enlace-deshabilitado, a:visited.enlace-deshabilitado, a:hover.enlace-deshabilitado {color: #666666; cursor: default;}
+.fondo-amarillo {background: #FFFFCD; color: #666666; font: normal 9pt Arial, Helvetica, sans-serif; border: 0px; overflow: hidden;}
+input.fondo-amarillo {background: #FFFFCD; color: #666666; font: normal 9pt Arial, Helvetica, sans-serif; border: 0px; overflow: hidden; height: 11px; line-height: 9px; padding: 0px; padding-top: 2px; vertical-align: text-top;}
+.fondo-gris {background: #F0F0F0; color: #666666; font: bold 9pt Arial, Helvetica, sans-serif; height: 25px;}
+.fondo-azul {background: #CBE8F7; color: #333333; font: bold 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.fondo-verde {background: #9CBC30; color: #FFFFFF; font: bold 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.fondo-rojo {background: #C10404; color: #FFFFFF; font: bold 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.subrayado {background: #FFFFFF; border-bottom: 1px solid #BCCEE8; color: #666666; font: bold 9pt Arial, Helvetica, sans-serif; height: 22px; padding-left: 5px; padding-top: 8px; text-align: left;}
+.subrayado_fino {background: #FFFFFF; border-bottom: 1px solid #BCCEE8; color: #666666; font: 4pt Arial, Helvetica, sans-serif; height: 5px; padding-left: 2px; text-align: left;}
+.gris-impar {background: #ECECEC; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.gris-par {background: #F9F9F9; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.azul-impar {background: #CBE8F7; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.azul-par {background: #EAF6FC; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.blanco-fila {background: #FFFFFF; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.blanco-lb-fila {background: #FFFFFF; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 20px;}
+.blanco-fila-doble {background: #FFFFFF; color: #333333; font: normal 9pt Arial, Helvetica, sans-serif; height: 40px;}
+.texto-titulo {color: #0451A7; font: bold 13pt Arial, Helvetica, sans-serif; padding-left: 5px; text-align: left;}
+.texto-titulo2 {color: #0451A7; font: bold 10pt Arial, Helvetica, sans-serif; text-align: left;}
+.texto-estandar {color: #333333; font: normal 9pt Arial, Helvetica, sans-serif;}
+.texto-tabla-titulo {color: #666666; font: bold 9pt Arial, Helvetica, sans-serif;}
+.texto-tabla-rojo {color: #990000; font: normal 9pt Arial, Helvetica, sans-serif; padding-right: 5px; text-align: right;}
+.texto-tabla-verde {color: #398639; font: normal 9pt Arial, Helvetica, sans-serif; padding-right: 5px; text-align: right;}
+.texto-tabla-importancia {font: bold 13pt "Monotype.com", monospace; color: #CC0000; text-align: center;}
+.texto-indice, .texto-tabla-indice {font: bold 9pt Arial, Helvetica, sans-serif; padding-left: 5px; text-align: left;}
+.texto-tabla-izquierda {font: normal 9pt Arial, Helvetica, sans-serif; padding-left: 5px; text-align: left;}
+.texto-tabla-centro {font: normal 9pt Arial, Helvetica, sans-serif; text-align: center;}
+.texto-tabla-derecha {font: normal 9pt Arial, Helvetica, sans-serif; padding-right: 5px; text-align: right;}
+.texto-tabla-indice, .texto-tabla-izquierda, .texto-tabla-centro, .texto-tabla-derecha, .texto-tabla-rojo, .texto-tabla-verde, .texto-tabla-importancia {border-bottom: #FFFFFF 1px solid;}
+.izquierda {padding-left: 5px; text-align: left;}
+.centro {text-align: center;}
+.derecha {padding-right: 5px; text-align: right;}
+.blanco {background: #FFFFFF;}
+.noticias, .noticias2, a.noticias2 {background: transparent; color: #1F6FBC; font: bold 9pt Arial, Helvetica, sans-serif; padding: 3px 6px 3px 6px; text-align: left;}
+.noticias2 {font: bold 15px Arial, Helvetica, sans-serif; padding: 3px 0px 3px 5px;}
+a.noticias2 {font: bold 15px Arial, Helvetica, sans-serif; padding: 0px;}
+a.noticias2:hover {color: #1F6FBC; text-decoration: underline; font: bold 15px Arial, Helvetica, sans-serif;}
+.Boton75 {font-family: Arial; font-weight:800; font-size: 9pt; width: 75px; height: 20px; background-color: #ffffff; color: #02458f; border: 0px;	background-repeat:no-repeat; background-position:left top;	background-image:url(images/ataa_es_web_pub/Boton75.gif);}
+.boton-icono {width: 23px; background-color: #FFFFFF; background-repeat: no-repeat; border: 0px;}
+.Boton75-rojo {font-family: Arial; font-weight:800; font-size: 9pt; width: 75px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton75RojoH.gif);}
+.Boton75-rojo-deshabilitado {font-family: Arial; font-weight:800; font-size: 9pt; width: 75px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton75RojoD.gif);}
+.Boton75-amarillo {font-family: Arial; font-weight:800; font-size: 9pt; width: 75px; height: 20px; background-color: #ffffff; color: #5182BF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton75Amarillo.gif);}
+.titulo-ventana {background-color: #FFFFFF; color: #0451A7; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold;}
+table.tabla-titulo {width:100%; padding-left: 10px; height: 30px;}
+.cabecera-azul {background: #B6D2EB; color: #333333; font: bold 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.fila-seleccionada {background: #678FBC; color: #FFFFFF; font: normal 9pt Arial, Helvetica, sans-serif; height: 24px;}
+.Boton-rojo {font-family: Arial; font-weight:800; font-size: 9pt; width: 105px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/BotonRojoH.gif);}
+.Boton-rojo-deshabilitado {font-family: Arial; font-weight:800; font-size: 9pt; width: 105px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/BotonRojoD.gif);}
+.Boton120-rojo {font-family: Arial; font-weight:800; font-size: 9pt; width: 120px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton120RojoH.gif);}
+.Boton120-rojo-deshabilitado {font-family: Arial; font-weight:800; font-size: 9pt; width: 120px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton120RojoD.gif);}
+.Boton180-rojo {font-family: Arial; font-weight:800; font-size: 9pt; width: 180px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton180RojoH.gif);}
+.Boton180-rojo-deshabilitado {font-family: Arial; font-weight:800; font-size: 9pt; width: 180px; height: 20px; background-color: #ffffff; color: #FFFFFF; border: 0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton180RojoD.gif);}
+
+/* --- ESTILOS S�LO INFRAESTRUCTURA DE SISTEMAS DE OFICINA --- */
+.CampoOdnEntrada {font-family: "Monotype.com", monospace;font-size: 9pt; color:#41423a; background-color: #ffffff; border-bottom: #809db9 1px solid; border-top: #809db9 1px solid; border-right: #809db9 1px solid; border-left: #809db9 1px solid}
+.CampoOdnSalida {font-family: "Monotype.com", monospace; font-size: 9pt; color:#4a5565; background-color: #d3e1ec; border-bottom: #809db9 1px solid; border-top: #809db9 1px solid; border-right: #809db9 1px solid; border-left: #809db9 1px solid}
+.CampoOdnObligatorio {font-family: "Monotype.com", monospace; font-size: 9pt; color:#41423a; background-color: #ffffcc; border-bottom: #809db9 1px solid; border-top: #809db9 1px solid; border-right: #809db9 1px solid; border-left: #809db9 1px solid}
+
+/* --- ESTILOS S�LO SERVICIO MENSAJES --- */
+/*--- Mensajes de alerta ---*/
+	/*--- Zona de Icono ---*/
+	.IcoAlert{ width:20%; height:310px; background:#E5EEFD;}
+	.TextoTipoAlerta {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-style: normal; text-align: center; font-weight:bold; color:#666;  height:190px;  vertical-align:top; }
+
+	/*--- Zona de Icono ---*/
+	.MsjAlert{ width:80%; height:310px; background:#FFFFFF; vertical-align:top;}
+
+	/*--- Icono Exclamacion ---*/
+	.AlertExclamacion{ background: url(images/ataa_es_web_pub/Alerta-Exclamacion.gif) no-repeat center scroll; height:70px;}
+	/*--- Icono Informacion ---*/
+	.AlertInformacion{background: url(images/ataa_es_web_pub/Alerta-Informacion.gif) no-repeat center scroll; height:70px;}
+	/*--- Icono Pregunta ---*/
+	.AlertPregunta{background: url(images/ataa_es_web_pub/Alerta-Interrogante.gif) no-repeat center scroll; height:70px;}
+	/*--- Icono Confirmacion---*/
+	.AlertConfirmacion{background: url(images/ataa_es_web_pub/Alerta-Check.gif) no-repeat center scroll; height:70px;}
+	/*--- Icono Error---*/
+	.AlertError{background: url(images/ataa_es_web_pub/Alerta-Aspa.gif) no-repeat center scroll; height:70px;}
+
+	/*--- Titulo alerta---*/
+	.TituloAlerta {font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #02458f; font-weight: bold; text-align:left; height:20px; vertical-align: top; margin-top:4px;}
+	.TituloAlertaError {font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #CC0000; font-weight: bold; text-align:left; height:20px; vertical-align: top}
+
+	/*--- Texto alerta---*/
+	.TextoAlerta {vertical-align:top; height:200px;}
+	p.txtAlert {font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; color:#999999;}
+
+	/*--- Botones alerta---*/
+	.BotonesAlerta { vertical-align:bottom}
+
+/* --- Alinear --- */
+.alinearIzq{ float:left; text-align:left; padding-left:8px; }
+.alinearDer{ float:right; text-align:right;	padding-right:8px;}
+
+/* --- Botones  --- */
+.BotonHover {font-family: Arial; font-weight:800; font-size: 9pt; width: 85px; height: 20px; color: #1556a3; border:0px; background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton_v02Hover.gif); cursor:pointer;}
+.BotonDisabled {font-family: Arial; font-weight:800; font-size: 9pt; width: 85px; height: 20px; color:#CCCCCC; border:0px;	background-repeat:no-repeat; background-position:left top; background-image:url(images/ataa_es_web_pub/Boton_v02Disabled.gif);}
+
+/*Paginacion tablas*/
+a.NumPaginacion{color:#1556a3; background:url(images/ataa_es_web_pub/itempaginacion.gif) no-repeat center;	font-size:11px;	font-weight:bold; padding-left:5px;	padding-right:5px; padding-top:2px;	padding-bottom:2px; margin-right:4px; text-align:center; text-decoration:none; cursor:pointer;}
+a.NumPaginacionActiva{ color:#F60; background:none; font-size:11px; font-weight:bold; padding-left:6px; padding-right:4px; padding-top:2px; margin-right:4px; text-align:center;	text-decoration:none; cursor:default; }

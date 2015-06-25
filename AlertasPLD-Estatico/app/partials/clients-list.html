@@ -1,0 +1,34 @@
+<!--
+
+  "idCliente":"1",
+  "nombres":"Alan Orlando",
+  "apellidos":"Cruz Manrique",
+  "tipoPersona":"FISICA",
+  "fechaAlta":"2015-06-11T17:59:32.203Z"
+ -->
+<div class="container">
+
+<div class="TituloVentana"><h3>Clientes</h3></div>
+  <table class="table table-striped">
+      <thead>
+        <tr class="CabeceraTabla">
+          <th>ID</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Tipo de Persona</th>
+          <th>Fecha de alta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="c in clients | filter:query" class="TextoTabla">
+          <td>{{ c.idCliente }}</td>
+          <td>{{ c.nombres }}</td>
+          <td>{{ c.apellidos }}</td>
+          <td>{{ c.tipoPersona }}</td>
+          <td>{{ c.fechaAlta }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#/alerts">Regresar a Alertas</a>
+</div>

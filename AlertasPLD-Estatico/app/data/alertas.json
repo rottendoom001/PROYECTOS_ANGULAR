@@ -1,0 +1,17 @@
+[{
+  "idAlerta":"1",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "idCliente":"1",
+  "cuenta":"12345678",
+  "motivo":"MONTO NO PERMITIDO",
+  "montoAcumulado":"500000",
+  "estatus":"NO RESUELTA"
+},{
+  "idAlerta":"2",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "idCliente":"2",
+  "cuenta":"00000000",
+  "motivo":"SUPERA MONTO PERMITIDO",
+  "montoAcumulado":"600000",
+  "estatus":"NO RESUELTA"
+}]

@@ -1,0 +1,65 @@
+[{
+  "idOperacion":"1",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"12345678",
+  "monto":"100000",
+  "crOp":"CR-OP-01",
+  "tipo":"ABONO",
+  "idAlerta":"1"
+},{
+  "idOperacion":"2",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"12345678",
+  "monto":"100000",
+  "crOp":"CR-OP-01",
+  "tipo":"ABONO",
+  "idAlerta":"1"
+},{
+  "idOperacion":"3",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"12345678",
+  "monto":"100000",
+  "crOp":"CR-OP-01",
+  "tipo":"ABONO",
+  "idAlerta":"1"
+},{
+  "idOperacion":"4",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"12345678",
+  "monto":"100000",
+  "crOp":"CR-OP-01",
+  "tipo":"ABONO",
+  "idAlerta":"1"
+},{
+  "idOperacion":"5",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"12345678",
+  "monto":"100000",
+  "crOp":"CR-OP-01",
+  "tipo":"ABONO",
+  "idAlerta":"1"
+},{
+  "idOperacion":"6",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"00000000",
+  "monto":"200000",
+  "crOp":"CR-OP-02",
+  "tipo":"ABONO",
+  "idAlerta":"2"
+},{
+  "idOperacion":"7",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"00000000",
+  "monto":"200000",
+  "crOp":"CR-OP-02",
+  "tipo":"ABONO",
+  "idAlerta":"2"
+},{
+  "idOperacion":"8",
+  "fechaGen":"2015-06-11T17:59:32.203Z",
+  "cuenta":"00000000",
+  "monto":"200000",
+  "crOp":"CR-OP-02",
+  "tipo":"ABONO",
+  "idAlerta":"2"
+}]

@@ -1,0 +1,33 @@
+
+<div class="container">
+
+<div class="TituloVentana"><h3>Operaciones Relevantes</h3></div>
+<table class="table table-striped">
+  <thead>
+    <tr class="CabeceraTabla">
+      <th>Cuenta</th>
+      <th>Fecha</th>
+      <th>Folio del Documento</th>
+      <th>Tipo de Operación</th>
+      <th>Oficina</th>
+      <th>Operación</th>
+      <th>Clasificación</th>
+      <th>Importe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="tr in transactionsR | filter:query" class="TextoTabla">
+      <td>{{ tr.idCuenta }}</td>
+      <td>{{ tr.fechaGen }}</td>
+      <td>{{ tr.folio }}</td>
+      <td>{{ tr.tipo }}</td>
+      <td>{{ tr.oficina }}</td>
+      <td>{{ tr.transaccion }}</td>
+      <td>{{ tr.clasificacion }}</td>
+      <td>{{ tr.monto | currency }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="#/alerts">Regresar a las Alertas</a>
+</div>
