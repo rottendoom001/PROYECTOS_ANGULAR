@@ -1,0 +1,37 @@
+<!--
+
+"idCuenta":"1",
+"idCliente":"1",
+"fechaGen":"2015-06-11T17:59:32.203Z",
+"crGestor":"CR-SUC-01",
+"nomSucursal":"ARQUIMIDES",
+"cenSup":"CEN-SUP-01",
+"division":"division 1",
+"estado":"DF"
+ -->
+<div class="container">
+
+<div class="TituloVentana"><h3>Centros Responsables Detectados</h3></div>
+  <table class="table table-striped">
+      <thead>
+        <tr class="CabeceraTabla">
+          <th>CR</th>
+          <th>Nombre Sucursal</th>
+          <th>Centro Superior</th>
+          <th>Division</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="cr in crOp | filter:query" class="TextoTabla">
+          <td>{{ cr.idCr }}</td>
+          <td>{{ cr.nomSucursal }}</td>
+          <td>{{ cr.cenSup }}</td>
+          <td>{{ cr.division }}</td>
+          <td>{{ cr.estado }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#/alerts">Regresar a Alertas</a>
+</div>

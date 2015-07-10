@@ -54,3 +54,13 @@ alertsControllers.controller('AlertsListCtrl', ['$scope', 'getAlerts',
       function($scope,$routeParams,getAccounts) {
         $scope.accounts = getAccounts.query({idCliente:$routeParams.clientId});
       }]);
+      //////////////////////////////// CR OPERATIONS
+      alertsControllers.controller('CrOpListCtrl', ['$scope','getCrOp',
+       function($scope,getCrOp) {
+         $scope.crOp = getCrOp.query();
+       }]);
+
+       alertsControllers.controller('CrOpForCrIdCtrl', ['$scope','$routeParams', 'getCrOp',
+        function($scope,$routeParams,getCrOp) {
+          $scope.crOp = getCrOp.query({idCr:$routeParams.crId});
+        }]);

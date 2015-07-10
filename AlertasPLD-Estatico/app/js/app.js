@@ -56,6 +56,15 @@ alertsApp.config(['$routeProvider',
         templateUrl: 'partials/alerts-list.html',
         controller: 'AlertsForAlertIdCtrl'
       }).
+////////// ALERTS ///////////////////////////////////////////
+      when('/cr_info', {
+        templateUrl: 'partials/cr-list.html',
+          controller: 'CrOpListCtrl'
+      }).
+      when('/cr_info/:crId', {
+        templateUrl: 'partials/cr-list.html',
+          controller: 'CrOpForCrIdCtrl'
+      }).
 ///////// MAPA //////////////////////////
     when('/map', {
       templateUrl: 'partials/mexico-map.html'
