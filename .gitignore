@@ -15,6 +15,7 @@ coverage
 dist
 .tmp
 logs/
+package-lock.json
 
 ####################################
 ##### CONFIGURACION DE ENTORNO #####
